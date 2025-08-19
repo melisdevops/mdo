@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>MelisDevOps | Portfolio: Sito Web Vineria "Isola del Vino"</title>
+  <title>MelisDevOps | Portfolio: Sito Web Ristorante "La Perla Nera"</title>
   <meta name="description"
-    content="Esempio di sito web realizzato da MelisDevOps: vineria fittizia 'Isola del Vino', realizzato in WordPress con Elementor e WooCommerce. Portfolio web per clienti e progetti demo." />
+    content="Esempio di sito web realizzato da MelisDevOps: Ristorante fittizio 'La Perla Nera', realizzato in WordPress con Elementor. Portfolio web per clienti e progetti demo." />
   <meta name="keywords"
-    content="portfolio web Olbia, MelisDevOps, siti WordPress demo, Elementor, WooCommerce, progetto vineria, esempi portfolio, sviluppo siti web Sardegna" />
+    content="portfolio web Olbia, MelisDevOps, siti WordPress demo, Elementor, progetto la perla nera, esempi portfolio, sviluppo siti web Sardegna" />
   <meta name="author" content="Marcello Melis" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://mdevops.netlify.app" />
@@ -19,7 +19,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="MelisDevOps | Portfolio: Isola del Vino" />
   <meta property="og:description"
-    content="Demo progetto portfolio: sito vineria 'Isola del Vino' creato da MelisDevOps, WordPress con Elementor e WooCommerce." />
+    content="Demo progetto portfolio: sito ristorante 'La Perla Nera' creato da MelisDevOps, WordPress con Elementor e WooCommerce." />
   <meta property="og:image" content="https://mdevops.netlify.app/assets/img/portfolio/winery1.webp" />
   <meta property="og:url" content="https://mdevops.netlify.app" />
   <meta property="og:type" content="website" />
@@ -27,9 +27,9 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MelisDevOps | Portfolio: Isola del Vino" />
+  <meta name="twitter:title" content="MelisDevOps | Portfolio: La Perla Nera" />
   <meta name="twitter:description"
-    content="Demo sito web creato da MelisDevOps: vineria fittizia 'Isola del Vino', WordPress, Elementor e WooCommerce." />
+    content="Demo sito web creato da MelisDevOps: Risotrante fittizio 'La Perla Nera', WordPress, Elementor e WooCommerce." />
   <meta name="twitter:image" content="https://mdevops.netlify.app/assets/img/portfolio/winery1.webp" />
 
   <!-- JSON-LD Schema -->
@@ -118,182 +118,167 @@
     </div>
   </header>
 
-  <main class="main">
+<main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade">
-      <div class="container position-relative">
-        <h1>Portfolio</h1>
-        <h6>Scopri il progetto realizzato per la vineria <strong>Isola del Vino</strong>, con funzionalità e-commerce,
-          eventi e gestione contenuti tramite WordPress</h6>
+  <!-- Page Title -->
+  <div class="page-title dark-background" data-aos="fade">
+    <div class="container position-relative">
+      <h1>Portfolio</h1>
+      <h6>Scopri il progetto realizzato per il ristorante <strong>La Perla Nera</strong>, con modulo di contatto per prenotazioni, menu chiaro e design moderno ed elegante.</h6>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+
+        <!-- Media / Gallery -->
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="portfolio-details-media">
+            <div class="main-image">
+              <div class="portfolio-details-slider swiper init-swiper" data-aos="zoom-in">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 1000,
+                    "autoplay": {"delay": 6000},
+                    "effect": "creative",
+                    "creativeEffect": {
+                      "prev": {"shadow": true, "translate": [0,0,-400]},
+                      "next": {"translate": ["100%",0,0]}
+                    },
+                    "slidesPerView": 1,
+                    "navigation": {"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"}
+                  }
+                </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/restaurant1.webp" alt="La Perla Nera - Home Page" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/restaurant2.webp" alt="Menu e Prenotazioni" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/restaurant3.webp" alt="Design moderno ed elegante" class="img-fluid">
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+
+            <!-- Thumbnail Gallery -->
+            <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
+              <div class="row g-2 mt-3">
+                <div class="col-3"><img src="assets/img/portfolio/restaurant1.webp" class="img-fluid glightbox"></div>
+                <div class="col-3"><img src="assets/img/portfolio/restaurant2.webp" class="img-fluid glightbox"></div>
+                <div class="col-3"><img src="assets/img/portfolio/restaurant3.webp" class="img-fluid glightbox"></div>
+                <div class="col-3"><img src="assets/img/portfolio/restaurant4.webp" class="img-fluid glightbox"></div>
+              </div>
+            </div>
+
+            <!-- Tech Stack / CMS -->
+            <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
+              <span>WordPress</span>
+              <span>Elementor</span>
+              <span>Modulo Contatti</span>
+            </div>
+
+            <div class="project-website" style="padding-top:5%">
+              <i class="bi bi-link-45deg"></i>
+              <a href="#" target="_blank">portfolio.esempio-ristorante.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Details -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="portfolio-details-content">
+
+            <div class="project-meta">
+              <div class="badge-wrapper">
+                <span class="project-badge">Web Design & Prenotazioni Online</span>
+              </div>
+              <div class="date-client">
+                <div class="meta-item">
+                  <i class="bi bi-calendar-check"></i>
+                  <span>Agosto 2025</span>
+                </div>
+                <div class="meta-item">
+                  <i class="bi bi-buildings"></i>
+                  <span>La Perla Nera</span>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="project-title">Ristorante Moderno con Menu Chiaro e Prenotazioni Online</h2>
+
+            <div class="project-overview">
+              <p class="lead">
+                Sito web realizzato per il ristorante <strong>La Perla Nera</strong>, con modulo di contatto per prenotazioni, menu facilmente consultabile e design moderno ed elegante. Realizzato in WordPress con Elementor per una gestione semplice dei contenuti.
+              </p>
+
+              <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
+                <div class="accordion-item" data-aos="fade-up">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#overview" aria-expanded="true">
+                      <i class="bi bi-clipboard-data me-2"></i> Panoramica
+                    </button>
+                  </h2>
+                  <div id="overview" class="accordion-collapse collapse show"
+                    data-bs-parent="#portfolio-details-projectAccordion">
+                    <div class="accordion-body">
+                      <p>Il sito permette ai visitatori di consultare il menu completo, inviare richieste di prenotazione direttamente dal modulo contatti e visualizzare immagini del locale e dei piatti.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#challenge" aria-expanded="false">
+                      <i class="bi bi-exclamation-diamond me-2"></i> La sfida
+                    </button>
+                  </h2>
+                  <div id="challenge" class="accordion-collapse collapse"
+                    data-bs-parent="#portfolio-details-projectAccordion">
+                    <div class="accordion-body">
+                      <p>Realizzare un sito moderno e elegante, facile da aggiornare e gestire dal personale, integrando il modulo prenotazioni e un menu chiaro senza appesantire la navigazione.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#solution" aria-expanded="false">
+                      <i class="bi bi-award me-2"></i> La soluzione
+                    </button>
+                  </h2>
+                  <div id="solution" class="accordion-collapse collapse"
+                    data-bs-parent="#portfolio-details-projectAccordion">
+                    <div class="accordion-body">
+                      <p>WordPress con Elementor ha permesso di creare un sito responsive, elegante e modulare. Il modulo contatti consente prenotazioni rapide, il menu è chiaro e facilmente aggiornabile e il design valorizza l’esperienza del visitatore.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+              <a href="https://mdevops.netlify.app#portfolio" class="btn-view-project">Altri progetti <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
-    </div><!-- End Page Title -->
+  </section><!-- /Portfolio Details Section -->
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-
-          <!-- Media / Gallery -->
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="portfolio-details-media">
-              <div class="main-image">
-                <div class="portfolio-details-slider swiper init-swiper" data-aos="zoom-in">
-                  <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 1000,
-                  "autoplay": {"delay": 6000},
-                  "effect": "creative",
-                  "creativeEffect": {
-                    "prev": {"shadow": true, "translate": [0,0,-400]},
-                    "next": {"translate": ["100%",0,0]}
-                  },
-                  "slidesPerView": 1,
-                  "navigation": {"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"}
-                }
-              </script>
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="assets/img/portfolio/winery1.webp" alt="Isola del Vino - Home Page" class="img-fluid">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="assets/img/portfolio/winery2.webp" alt="E-commerce Vineria" class="img-fluid">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="assets/img/portfolio/winery3.webp" alt="Eventi e News" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                </div>
-              </div>
-
-              <!-- Thumbnail Gallery -->
-              <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
-                <div class="row g-2 mt-3">
-                  <div class="col-3"><img src="assets/img/portfolio/winery1.webp" class="img-fluid glightbox"></div>
-                  <div class="col-3"><img src="assets/img/portfolio/winery2.webp" class="img-fluid glightbox"></div>
-                  <div class="col-3"><img src="assets/img/portfolio/winery3.webp" class="img-fluid glightbox"></div>
-                  <div class="col-3"><img src="assets/img/portfolio/winery4.webp" class="img-fluid glightbox"></div>
-                </div>
-              </div>
-
-
-              <!-- Tech Stack / CMS -->
-              <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
-                <span>WordPress</span>
-                <span>WooCommerce</span>
-                <span>Elementor</span>
-              </div>
-
-              <div class="project-website" style="padding-top:5%">
-              <i class="bi bi-link-45deg"></i>
-              <a href="#" target="_blank">portfolio.esempio-vineria.com</a>
-            </div>
-            </div>
-            
-
-          </div>
-
-
-
-
-          <!-- Project Details -->
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="portfolio-details-content">
-
-              <div class="project-meta">
-                <div class="badge-wrapper">
-                  <span class="project-badge">Web Design & E-Commerce</span>
-                </div>
-                <div class="date-client">
-                  <div class="meta-item">
-                    <i class="bi bi-calendar-check"></i>
-                    <span>Agosto 2025</span>
-                  </div>
-                  <div class="meta-item">
-                    <i class="bi bi-buildings"></i>
-                    <span>Isola del Vino</span>
-                  </div>
-                </div>
-              </div>
-
-              <h2 class="project-title">Vineria Online con Eventi e Shop Digitale</h2>
-
-
-
-              <div class="project-overview">
-                <p class="lead">
-                  Sito web realizzato per la vineria <strong>Isola del Vino</strong>, con funzionalità di e-commerce
-                  tramite WooCommerce, gestione eventi, news e aggiornamenti di prodotti. Realizzato in WordPress con
-                  Elementor per flessibilità e facilità di gestione.
-                </p>
-
-                <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
-                  <div class="accordion-item" data-aos="fade-up">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#overview" aria-expanded="true">
-                        <i class="bi bi-clipboard-data me-2"></i> Panoramica
-                      </button>
-                    </h2>
-                    <div id="overview" class="accordion-collapse collapse show"
-                      data-bs-parent="#portfolio-details-projectAccordion">
-                      <div class="accordion-body">
-                        <p>Il sito consente ai clienti di navigare facilmente tra prodotti e vini, effettuare acquisti
-                          online e rimanere aggiornati sugli eventi organizzati dalla vineria.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#challenge" aria-expanded="false">
-                        <i class="bi bi-exclamation-diamond me-2"></i> La sfida
-                      </button>
-                    </h2>
-                    <div id="challenge" class="accordion-collapse collapse"
-                      data-bs-parent="#portfolio-details-projectAccordion">
-                      <div class="accordion-body">
-                        <p>Integrare un e-commerce completo con gestione eventi e notizie, mantenendo un design moderno,
-                          intuitivo e facilmente aggiornabile dal cliente senza conoscenze tecniche avanzate.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#solution" aria-expanded="false">
-                        <i class="bi bi-award me-2"></i> La soluzione
-                      </button>
-                    </h2>
-                    <div id="solution" class="accordion-collapse collapse"
-                      data-bs-parent="#portfolio-details-projectAccordion">
-                      <div class="accordion-body">
-                        <p>WordPress con Elementor e WooCommerce ha permesso di creare un sito modulare, responsive e
-                          facile da aggiornare. Le funzionalità e-commerce e la gestione eventi sono integrate
-                          direttamente nel pannello di controllo del CMS.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
-                <a href="https://mdevops.netlify.app#portfolio" class="btn-view-project">Altri progetti <i
-                    class="bi bi-arrow-right"></i></a>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- /Portfolio Details Section -->
+</main>
 
 
   </main>
