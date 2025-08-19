@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>MelisDevOps | Portfolio: Sito Web Vineria "Isola del Vino"</title>
+  <meta name="description"
+    content="Esempio di sito web realizzato da MelisDevOps: vineria fittizia 'Isola del Vino', realizzato in WordPress con Elementor e WooCommerce. Portfolio web per clienti e progetti demo." />
+  <meta name="keywords"
+    content="portfolio web Olbia, MelisDevOps, siti WordPress demo, Elementor, WooCommerce, progetto vineria, esempi portfolio, sviluppo siti web Sardegna" />
+  <meta name="author" content="Marcello Melis" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mdevops.netlify.app" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MelisDevOps | Portfolio: Isola del Vino" />
+  <meta property="og:description"
+    content="Demo progetto portfolio: sito vineria 'Isola del Vino' creato da MelisDevOps, WordPress con Elementor e WooCommerce." />
+  <meta property="og:image" content="https://mdevops.netlify.app/assets/img/portfolio/winery1.webp" />
+  <meta property="og:url" content="https://mdevops.netlify.app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MelisDevOps | Portfolio: Isola del Vino" />
+  <meta name="twitter:description"
+    content="Demo sito web creato da MelisDevOps: vineria fittizia 'Isola del Vino', WordPress, Elementor e WooCommerce." />
+  <meta name="twitter:image" content="https://mdevops.netlify.app/assets/img/portfolio/winery1.webp" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marcello Melis",
+    "url": "https://mdevops.netlify.app",
+    "image": "https://mdevops.netlify.app/img/logo.png",
+    "jobTitle": "Web Developer & Sistemista Freelance",
+    "sameAs": ["https://www.linkedin.com/in/marcello-melis"]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="src/img/favicon.webp" type="image/webp" />
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" href="src/img/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="src/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="src/img/apple-touch-icon-114x114.png" />
+
+  <!-- Performance: Preconnect & DNS Prefetch -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-yV3RrY0NnKP+y2y+..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="vendors/glightbox/dist/css/glightbox.min.css" />
+
+  <!-- Preload immagine principale -->
+  <link rel="preload" as="image" href="src/img/home-print.png" type="image/png" fetchpriority="high" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/favicon.webp" alt="">
+        <h1 class="sitename">melisdevops</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="https://mdevops.netlify.com" class="active">Home</a></li>
+          <li><a href="https://mdevops.netlify.com#about">Chi Sono</a></li>
+          <li><a href="https://mdevops.netlify.com#services">Servizi</a></li>
+          <li><a href="https://mdevops.netlify.com#portfolio">Portfolio</a></li>
+          <li><a href="https://mdevops.netlify.com#pricing">Prezzi</a></li>
+          <li><a href="https://mdevops.netlify.com#contact">Contatti</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="https://mdevops.netlify.com#contact">Contattami</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade">
+      <div class="container position-relative">
+        <h1>Portfolio</h1>
+        <h6>Scopri il progetto realizzato per la vineria <strong>Isola del Vino</strong>, con funzionalità e-commerce,
+          eventi e gestione contenuti tramite WordPress</h6>
+      </div>
+    </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- Media / Gallery -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="portfolio-details-media">
+              <div class="main-image">
+                <div class="portfolio-details-slider swiper init-swiper" data-aos="zoom-in">
+                  <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 1000,
+                  "autoplay": {"delay": 6000},
+                  "effect": "creative",
+                  "creativeEffect": {
+                    "prev": {"shadow": true, "translate": [0,0,-400]},
+                    "next": {"translate": ["100%",0,0]}
+                  },
+                  "slidesPerView": 1,
+                  "navigation": {"nextEl": ".swiper-button-next","prevEl": ".swiper-button-prev"}
+                }
+              </script>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/winery1.webp" alt="Isola del Vino - Home Page" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/winery2.webp" alt="E-commerce Vineria" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/winery3.webp" alt="Eventi e News" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <!-- Thumbnail Gallery -->
+              <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="row g-2 mt-3">
+                  <div class="col-3"><img src="assets/img/portfolio/winery1.webp" class="img-fluid glightbox"></div>
+                  <div class="col-3"><img src="assets/img/portfolio/winery2.webp" class="img-fluid glightbox"></div>
+                  <div class="col-3"><img src="assets/img/portfolio/winery3.webp" class="img-fluid glightbox"></div>
+                  <div class="col-3"><img src="assets/img/portfolio/winery4.webp" class="img-fluid glightbox"></div>
+                </div>
+              </div>
+
+
+              <!-- Tech Stack / CMS -->
+              <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
+                <span>WordPress</span>
+                <span>WooCommerce</span>
+                <span>Elementor</span>
+              </div>
+
+              <div class="project-website" style="padding-top:5%">
+              <i class="bi bi-link-45deg"></i>
+              <a href="#" target="_blank">portfolio.esempio-vineria.com</a>
+            </div>
+            </div>
+            
+
+          </div>
+
+
+
+
+          <!-- Project Details -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="portfolio-details-content">
+
+              <div class="project-meta">
+                <div class="badge-wrapper">
+                  <span class="project-badge">Web Design & E-Commerce</span>
+                </div>
+                <div class="date-client">
+                  <div class="meta-item">
+                    <i class="bi bi-calendar-check"></i>
+                    <span>Agosto 2025</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="bi bi-buildings"></i>
+                    <span>Isola del Vino</span>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="project-title">Vineria Online con Eventi e Shop Digitale</h2>
+
+
+
+              <div class="project-overview">
+                <p class="lead">
+                  Sito web realizzato per la vineria <strong>Isola del Vino</strong>, con funzionalità di e-commerce
+                  tramite WooCommerce, gestione eventi, news e aggiornamenti di prodotti. Realizzato in WordPress con
+                  Elementor per flessibilità e facilità di gestione.
+                </p>
+
+                <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
+                  <div class="accordion-item" data-aos="fade-up">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#overview" aria-expanded="true">
+                        <i class="bi bi-clipboard-data me-2"></i> Panoramica
+                      </button>
+                    </h2>
+                    <div id="overview" class="accordion-collapse collapse show"
+                      data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p>Il sito consente ai clienti di navigare facilmente tra prodotti e vini, effettuare acquisti
+                          online e rimanere aggiornati sugli eventi organizzati dalla vineria.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#challenge" aria-expanded="false">
+                        <i class="bi bi-exclamation-diamond me-2"></i> La sfida
+                      </button>
+                    </h2>
+                    <div id="challenge" class="accordion-collapse collapse"
+                      data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p>Integrare un e-commerce completo con gestione eventi e notizie, mantenendo un design moderno,
+                          intuitivo e facilmente aggiornabile dal cliente senza conoscenze tecniche avanzate.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#solution" aria-expanded="false">
+                        <i class="bi bi-award me-2"></i> La soluzione
+                      </button>
+                    </h2>
+                    <div id="solution" class="accordion-collapse collapse"
+                      data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p>WordPress con Elementor e WooCommerce ha permesso di creare un sito modulare, responsive e
+                          facile da aggiornare. Le funzionalità e-commerce e la gestione eventi sono integrate
+                          direttamente nel pannello di controllo del CMS.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://mdevops.netlify.app#portfolio" class="btn-view-project">Altri progetti <i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Portfolio Details Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/favicon.webp" alt="">
+            <span class="sitename">MelisDevOps</span>
+          </a>
+          <p>
+            Sviluppo siti web moderni e performanti, ottimizzati per SEO e pensati per far crescere il tuo business.
+            Dal sito vetrina alla gestione tecnica completa, ti aiuto a portare online le tue idee.
+          </p>
+          <div class="social-links d-flex mt-4">
+            <!-- Email -->
+            <a href="mailto:melisdevops@gmail.com" aria-label="Invia una email a Marcello Mario Melis"
+              title="Email a Marcello Mario Melis">
+              <i class="bi bi-envelope"></i>
+            </a>
+
+            <!-- Telefono -->
+            <a href="tel:+393516696623" aria-label="Chiama Marcello Mario Melis" title="Telefono Marcello Mario Melis">
+              <i class="bi bi-telephone-fill"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/marcello-mario-melis-456b8b227/" target="_blank"
+              rel="noopener noreferrer" aria-label="Profilo LinkedIn di Marcello Mario Melis"
+              title="LinkedIn Marcello Mario Melis">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Link Utili</h4>
+          <ul>
+            <li><a href="https://melisweb.it">Home</a></li>
+            <li><a href="#abouts">Chi sono</a></li>
+            <li><a href="#services">Servizi</a></li>
+            <li><a href="#pricing">Prezzi</a></li>
+            <li><a href="#terms.html">Termini di Servizio</a></li>
+            <li><a href="#privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Servizi</h4>
+          <ul>
+            <li><a href="#">Siti Web vetrina</a></li>
+            <li><a href="#">Siti con CMS</a></li>
+            <li><a href="#">Ottimizzazione SEO</a></li>
+            <li><a href="#">Supporto IT</a></li>
+            <li><a href="#">Migrazione Siti</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contatti</h4>
+          <p class="mt-4"><strong>Telefono:</strong> <span>351 6696623</span></p>
+          <p class="mt-4"><strong>Email:</strong> <span>melisdevops@gmail.com</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Strategy</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

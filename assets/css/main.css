@@ -2004,14 +2004,21 @@ section,
 .portfolio .portfolio-entry .entry-image .entry-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: rgba(0, 0, 0, 0.3); /* overlay inizialmente leggero */
   display: flex;
-  align-items: flex-end;
-  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease-in-out;
+  color: #fff; /* testo chiaro */
 }
+
+.portfolio .portfolio-entry .entry-image:hover .entry-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8); /* diventa più scuro al hover */
+}
+
 
 .portfolio .portfolio-entry .entry-image .entry-overlay .overlay-content {
   width: 100%;
@@ -2937,24 +2944,24 @@ section,
   color: var(--heading-color);
 }
 
-.portfolio-details .portfolio-details-content .project-website {
+.portfolio-details .portfolio-details-media .project-website {
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
 }
 
-.portfolio-details .portfolio-details-content .project-website i {
+.portfolio-details .portfolio-details-media .project-website i {
   font-size: 22px;
   color: var(--accent-color);
   margin-right: 8px;
 }
 
-.portfolio-details .portfolio-details-content .project-website a {
+.portfolio-details .portfolio-details-media .project-website a {
   font-weight: 500;
   transition: all 0.3s;
 }
 
-.portfolio-details .portfolio-details-content .project-website a:hover {
+.portfolio-details .portfolio-details-media .project-website a:hover {
   letter-spacing: 0.5px;
 }
 
@@ -3139,6 +3146,8 @@ section,
     text-align: center;
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # Service Details Section
