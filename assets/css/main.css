@@ -770,11 +770,6 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-@media (max-width: 767px) {
-  #hero .row > .col-lg-5[data-aos="zoom-out"] {
-    display: none !important;
-  }
-}
 
 .hero {
   position: relative;
