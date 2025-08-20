@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="utf-8" />
@@ -7,46 +7,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>MelisDevOps | Portfolio: Sito Web Ristorante "La Perla Nera"</title>
+  <title>Centro Medico Aurora | Progetto Web di MelisDevOps</title>
   <meta name="description"
-    content="Esempio di sito web realizzato da MelisDevOps: Ristorante fittizio 'La Perla Nera', realizzato in WordPress con Elementor. Portfolio web per clienti e progetti demo." />
+    content="Progetto fittizio di sviluppo web per il Centro Medico Aurora: design moderno, ottimizzazione SEO e gestione prenotazioni online." />
   <meta name="keywords"
-    content="portfolio web Olbia, MelisDevOps, siti WordPress demo, Elementor, progetto la perla nera, esempi portfolio, sviluppo siti web Sardegna" />
+    content="centro medico aurora, clinica olbia, sito web sanitario, sviluppo siti WordPress medici, SEO cliniche, progetto portfolio MelisDevOps" />
   <meta name="author" content="Marcello Melis" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://mdevops.netlify.app" />
+  <link rel="canonical" href="https://mdevops.netlify.app/portfolio/centro-medico-aurora" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="MelisDevOps | Portfolio: Isola del Vino" />
+  <meta property="og:title" content="Centro Medico Aurora | Portfolio MelisDevOps" />
   <meta property="og:description"
-    content="Demo progetto portfolio: sito ristorante 'La Perla Nera' creato da MelisDevOps, WordPress con Elementor e WooCommerce." />
-  <meta property="og:image" content="https://mdevops.netlify.app/assets/img/portfolio/winery1.webp" />
-  <meta property="og:url" content="https://mdevops.netlify.app" />
+    content="Sviluppo sito web professionale per il Centro Medico Aurora: design responsive, SEO avanzato e sistema prenotazioni online." />
+  <meta property="og:image" content="https://mdevops.netlify.app/assets/img/portfolio/centro-medico-aurora.png" />
+  <meta property="og:url" content="https://mdevops.netlify.app/portfolio/centro-medico-aurora" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="it_IT" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MelisDevOps | Portfolio: La Perla Nera" />
+  <meta name="twitter:title" content="Centro Medico Aurora | Portfolio MelisDevOps" />
   <meta name="twitter:description"
-    content="Demo sito web creato da MelisDevOps: Risotrante fittizio 'La Perla Nera', WordPress, Elementor e WooCommerce." />
-  <meta name="twitter:image" content="https://mdevops.netlify.app/assets/img/portfolio/winery1.webp" />
+    content="Progetto fittizio di realizzazione sito web per il Centro Medico Aurora: moderno, ottimizzato SEO e con gestione prenotazioni." />
+  <meta name="twitter:image" content="https://mdevops.netlify.app/assets/img/portfolio/centro-medico-aurora.png" />
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Marcello Melis",
-    "url": "https://mdevops.netlify.app",
-    "image": "https://mdevops.netlify.app/img/logo.png",
-    "jobTitle": "Web Developer & Sistemista Freelance",
-    "sameAs": ["https://www.linkedin.com/in/marcello-melis"]
+    "@type": "MedicalClinic",
+    "name": "Centro Medico Aurora",
+    "image": "https://mdevops.netlify.app/assets/img/portfolio/centro-medico1.webp",
+    "url": "https://mdevops.netlify.app/portfolio-centro-medico",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Roma 123",
+      "addressLocality": "Olbia",
+      "addressRegion": "SS",
+      "postalCode": "07026",
+      "addressCountry": "IT"
+    },
+    "telephone": "+39 351 6696623",
+    "description": "Progetto fittizio di sviluppo sito web per il Centro Medico Aurora: design moderno, SEO e sistema prenotazioni online."
   }
   </script>
 
-  <!-- Favicon -->
-  <link rel="icon" href="src/img/favicon.webp" type="image/webp" />
+  <!--  Favicon -->
+  <link rel="icon" href="assets/img/favicon.webp" type="image/webp" />
 
   <!-- Apple Touch Icons -->
   <link rel="apple-touch-icon" href="src/img/apple-touch-icon.png" />
@@ -62,15 +70,21 @@
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
 
   <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
-  <!-- Font Awesome -->
+  <!--  Google Fonts -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;700;900&display=swap" />
+
+  <!--  Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-yV3RrY0NnKP+y2y+..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- CSS -->
+  <!--  CSS -->
   <link rel="stylesheet" href="src/css/style.css" />
   <link rel="stylesheet" href="vendors/glightbox/dist/css/glightbox.min.css" />
 
