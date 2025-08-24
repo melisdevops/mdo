@@ -1697,11 +1697,14 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .call-to-action .content-right img {
-  width: 65%;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
   height: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 50% !important;
 }
+
 
 .call-to-action .content-right .floating-card {
   position: absolute;
@@ -3794,3 +3797,7 @@ p, h1,h2,h3,h4,h5,h6 {
 .starter-section {
   /* Add your styles here */
 }
+
+/*-----------------------------------
+
+CSS personale
