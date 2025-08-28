@@ -3,25 +3,22 @@ name: Deploy su Aruba via FTP
 on:
   push:
     branches:
-      - main  # deploy automatico quando fai push su main
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # Step 1: copia il repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: deploy via FTP
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ftp.melisweb.it
           username: ${{ secrets.ARUBA_USER }}
           password: ${{ secrets.ARUBA_PASS }}
-          local-dir: ./        # root del repository
-          server-dir: ./       # percorso relativo alla root FTP
-          dry-run: false       # true per test, false per deploy reale
-          delete: false        # non cancella file extra sul server
+          local-dir: ./
+          server-dir: ./          # relativo alla root FTP
+          dry-run: false
+          delete: false
