@@ -3,11 +3,12 @@ name: Deploy su Aruba via FTP
 on:
   push:
     branches:
-      - main   # Branch principale da cui fare il deploy
+      - main   # branch principale da cui fare il deploy
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -18,6 +19,6 @@ jobs:
           server: ftp.melisweb.it
           username: ${{ secrets.ARUBA_USER }}
           password: ${{ secrets.ARUBA_PASS }}
-          local-dir: ./       # cartella locale del tuo progetto
-          server-dir: /       # root del dominio
-          dry-run: false
+          local-dir: ./          # cartella locale del progetto
+          server-dir: /          # root del dominio principale
+          dry-run: false         # impostalo a true per testare senza scrivere sul server
