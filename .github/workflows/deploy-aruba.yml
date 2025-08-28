@@ -20,4 +20,4 @@ jobs:
           password: ${{ secrets.ARUBA_PASS }}
           port: 22
           source: "*"
-          target: "/www.melisweb.it"
+          target: "www.melisweb.it"
