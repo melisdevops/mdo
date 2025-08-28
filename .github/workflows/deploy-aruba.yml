@@ -19,6 +19,8 @@ jobs:
           server: ftp.melisweb.it
           username: ${{ secrets.ARUBA_USER }}
           password: ${{ secrets.ARUBA_PASS }}
-          local-dir: ./          # cartella locale del progetto
-          server-dir: /          # root del dominio principale
-          dry-run: false         # impostalo a true per testare senza scrivere sul server
+          local-dir: ./               # root del repository
+          server-dir: /               # root del dominio principale
+          dry-run: false              # impostalo a true per test prima del deploy
+          delete: false               # non cancella file extra sul server
+          git-ftp-args: --insecure    # utile se il server ha certificati FTP particolari
