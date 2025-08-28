@@ -1,23 +1,23 @@
-name: Deploy su Aruba
+name: Deploy su Aruba via FTP
 
 on:
   push:
     branches:
-      - main   # branch principale da cui fare il deploy
+      - main   # Branch principale da cui fare il deploy
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Deploy via SFTP
-        uses: appleboy/scp-action@v0.1.1
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          host: ${{ secrets.ARUBA_HOST }}
+          server: ftp.melisweb.it
           username: ${{ secrets.ARUBA_USER }}
           password: ${{ secrets.ARUBA_PASS }}
-          port: 22
-          source: "*"
-          target: "www.melisweb.it"
+          local-dir: ./       # cartella locale del tuo progetto
+          server-dir: /       # root del dominio
+          dry-run: false
