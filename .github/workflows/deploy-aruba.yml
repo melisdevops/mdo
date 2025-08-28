@@ -20,27 +20,4 @@ jobs:
           password: ${{ secrets.ARUBA_PASS }}
           port: 22
           source: "*"
-          target: name: Deploy su Aruba
-
-on:
-  push:
-    branches:
-      - main   # branch principale da cui fare il deploy
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Deploy via SFTP
-        uses: appleboy/scp-action@v0.1.1
-        with:
-          host: ${{ secrets.ARUBA_HOST }}
-          username: ${{ secrets.ARUBA_USER }}
-          password: ${{ secrets.ARUBA_PASS }}
-          port: 22
-          source: "*"
-          target: "www.melisweb.it"
-
+          target: "/www.melisweb.it"
