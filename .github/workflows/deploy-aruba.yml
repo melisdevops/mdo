@@ -18,7 +18,7 @@ jobs:
           server: ftp.melisweb.it
           username: ${{ secrets.ARUBA_USER }}
           password: ${{ secrets.ARUBA_PASS }}
-          local-dir: ./                 # root del repository
-          server-dir: ./                # RELATIVO alla root FTP
+          local-dir: ./           # repository root
+          server-dir: ./          # relativo, NON assoluto
           dry-run: false
           delete: false
