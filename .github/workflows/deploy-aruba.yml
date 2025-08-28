@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -18,7 +19,7 @@ jobs:
           server: ftp.melisweb.it
           username: ${{ secrets.ARUBA_USER }}
           password: ${{ secrets.ARUBA_PASS }}
-          local-dir: ./
-          server-dir: ./          # relativo alla root FTP
+          local-dir: ./           # repository root
+          server-dir: ./          # relativo alla root FTP, NON assoluto
           dry-run: false
-          delete: false
+          dangerous-clean-slate: false   # mantiene file extra
