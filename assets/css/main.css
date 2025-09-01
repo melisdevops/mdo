@@ -456,7 +456,8 @@ h6 {
     padding: 0;               /* rimuove padding-top che sposta il centro */
     z-index: 9998;
     overflow-y: auto;
-  }
+}
+
 
   .mobile-nav-active .navmenu>ul {
     display: block;
