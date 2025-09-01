@@ -455,6 +455,112 @@ h6 {
     display: block;
   }
 }
+/* ================= MOBILE NAVMENU ================= */
+@media (max-width: 1199px) {
+
+  /* Toggle menu */
+  .mobile-nav-toggle {
+    color: var(--nav-color);
+    font-size: 28px;
+    line-height: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: block;
+    z-index: 10001;
+  }
+
+  /* Overlay menu mobile fullscreen */
+  .mobile-nav-active .navmenu {
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 8, 12, 0.95); /* overlay trasparente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px; /* spazio sopra logo */
+    z-index: 9998;
+    overflow-y: auto;
+  }
+
+  /* Logo mobile in alto */
+  .menu-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centra il logo */
+    margin-bottom: 10px;     /* spazio tra logo e menu */
+  }
+
+  .menu-logo img {
+    width: 120px !important;       /* larghezza fissa (modificabile) */
+    max-width: 40% !important;     /* massimo 50% del contenitore */
+    height: auto !important;
+  }
+
+  /* Lista menu verticale */
+  .mobile-nav-active .navmenu > ul {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    width: 100%;
+  }
+
+  .mobile-nav-active .navmenu a {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* Hover con sollevamento */
+  .mobile-nav-active .navmenu a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+  }
+
+  /* Dropdown eventuali sotto-voci */
+  .navmenu .dropdown ul {
+    position: static;
+    display: none;
+    z-index: 99;
+    padding: 10px 0;
+    margin: 10px 20px;
+    background-color: var(--nav-dropdown-background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navmenu .dropdown>.dropdown-active {
+    display: block;
+    background-color: rgba(33, 37, 41, 0.03);
+  }
+
+  /* Toggle menu quando overlay attivo */
+  .mobile-nav-active .mobile-nav-toggle {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    z-index: 10001;
+  }
+
+ /* Mantiene la voce selezionata */
+.mobile-nav-active .navmenu a.active {
+    color: var(--accent-color); /* colore della selezione */
+    transform: translateY(-3px); /* opzionale, come hover */
+}
+
 
 /*--------------------------------------------------------------
 # Global Footer
