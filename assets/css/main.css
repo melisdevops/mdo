@@ -474,22 +474,27 @@ h6 {
   .mobile-nav-active .navmenu {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.85); /* overlay scuro */
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;        /* centra logo e menu */
     justify-content: flex-start;
-    padding-top: 60px; /* spazio sopra logo */
+    padding-top: 60px;
     z-index: 9998;
     overflow-y: auto;
+    margin: 0;                  /* reset margini ereditati */
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;                /* tutta larghezza */
+    text-align: center;         /* centratura contenuti */
   }
 
   /* Logo mobile in alto */
   .menu-logo {
     width: 100%;
     display: flex;
-    justify-content: center; /* centra il logo */
-    margin: 0 auto 50px;     /* centratura con margini */
+    justify-content: center;
+    margin: 0 auto 50px;       /* centratura */
     padding: 0;
     text-align: center;
   }
@@ -498,22 +503,22 @@ h6 {
     width: 120px !important;
     max-width: 50% !important;
     height: auto !important;
+    margin: 0 auto;            /* centrato */
     display: block;
-    margin: 0 auto; /* centrato perfettamente */
   }
 
   /* Lista menu verticale */
   .mobile-nav-active .navmenu > ul {
     display: flex !important;
     flex-direction: column;
-    align-items: center;           /* centra voci orizzontalmente */
+    align-items: center;
     gap: 25px;
-    margin: 0;                     /* reset margine */
-    padding: 0;                    /* reset padding */
-    list-style: none;              /* rimuove pallini */
-    width: 100%;
+    margin: 0 auto;            /* centrato */
+    padding: 0;
+    list-style: none;
+    width: auto;               /* lascia che il contenuto decida la larghezza */
     text-align: center;
-    background: transparent;       /* mantiene trasparenza */
+    background: transparent;
   }
 
   .mobile-nav-active .navmenu li {
@@ -528,7 +533,7 @@ h6 {
     text-decoration: none;
     padding: 10px 0;
     transition: all 0.3s ease;
-    display: block;                /* centra i link */
+    display: inline-block;
     text-align: center;
   }
 
@@ -536,6 +541,11 @@ h6 {
   .mobile-nav-active .navmenu a:hover {
     color: var(--accent-color);
     transform: translateY(-3px);
+  }
+
+  /* Stato active */
+  .mobile-nav-active .navmenu a.active {
+    color: var(--accent-color);
   }
 
   /* Dropdown eventuali sotto-voci */
