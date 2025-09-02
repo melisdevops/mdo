@@ -449,15 +449,7 @@ h6 {
     inset: 0;
     background: rgba(33, 37, 41, 0.8);
     transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;      /* centra orizzontalmente */
-    justify-content: center;  /* centra verticalmente */
-    padding: 0;               /* rimuove padding-top che sposta il centro */
-    z-index: 9998;
-    overflow-y: auto;
-}
-
+  }
 
   .mobile-nav-active .navmenu>ul {
     display: block;
@@ -482,7 +474,7 @@ h6 {
   .mobile-nav-active .navmenu {
     position: fixed;
     inset: 0;
-    background: rgba(2, 8, 12, 0.95); /* overlay trasparente */
+    background: rgba(0, 0, 0, 0.85); /* overlay scuro */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -497,25 +489,36 @@ h6 {
     width: 100%;
     display: flex;
     justify-content: center; /* centra il logo */
-    margin-bottom: 10px;     /* spazio tra logo e menu */
+    margin: 0 auto 50px;     /* centratura con margini */
+    padding: 0;
+    text-align: center;
   }
 
   .menu-logo img {
-    width: 120px !important;       /* larghezza fissa (modificabile) */
-    max-width: 40% !important;     /* massimo 50% del contenitore */
+    width: 120px !important;
+    max-width: 50% !important;
     height: auto !important;
+    display: block;
+    margin: 0 auto; /* centrato perfettamente */
   }
 
   /* Lista menu verticale */
   .mobile-nav-active .navmenu > ul {
     display: flex !important;
     flex-direction: column;
-    align-items: center;
+    align-items: center;           /* centra voci orizzontalmente */
     gap: 25px;
+    margin: 0;                     /* reset margine */
+    padding: 0;                    /* reset padding */
+    list-style: none;              /* rimuove pallini */
+    width: 100%;
+    text-align: center;
+    background: transparent;       /* mantiene trasparenza */
+  }
+
+  .mobile-nav-active .navmenu li {
     margin: 0;
     padding: 0;
-    background: transparent;
-    width: 100%;
   }
 
   .mobile-nav-active .navmenu a {
@@ -525,7 +528,7 @@ h6 {
     text-decoration: none;
     padding: 10px 0;
     transition: all 0.3s ease;
-    display: inline-block;
+    display: block;                /* centra i link */
     text-align: center;
   }
 
@@ -548,7 +551,7 @@ h6 {
     transition: all 0.5s ease-in-out;
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -563,12 +566,11 @@ h6 {
     z-index: 10001;
   }
 
- /* Mantiene la voce selezionata */
-.mobile-nav-active .navmenu a.active {
-    color: var(--accent-color); /* colore della selezione */
-    transform: translateY(-3px); /* opzionale, come hover */
+  /* Disabilita scroll body quando overlay attivo */
+  .mobile-nav-active {
+    overflow: hidden;
+  }
 }
-
 
 /*--------------------------------------------------------------
 # Global Footer
