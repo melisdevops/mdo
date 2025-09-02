@@ -500,8 +500,8 @@ h6 {
   }
 
   .menu-logo img {
-    width: 120px !important;
-    max-width: 50% !important;
+    width: 300px !important;
+    max-width: 80% !important;
     height: auto !important;
     margin: 0 auto;            /* centrato */
     display: block;
