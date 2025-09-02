@@ -19,7 +19,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #031119; /* Background color for the entire website, including individual sections */
+  --background-color: rgb(3, 17, 25); /* Background color for the entire website, including individual sections */
   --default-color: rgba(255, 255, 255, 0.8); /* Default color used for the majority of the text content across the entire website */
   --heading-color: #e0e9f2; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #03cafe; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -474,7 +474,7 @@ h6 {
   .mobile-nav-active .navmenu {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(2, 12, 18, 0.97);
     display: flex;
     flex-direction: column;
     align-items: center;        /* centra logo e menu */
